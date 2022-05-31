@@ -21,11 +21,11 @@ Table Of Contents:
 /*     General Styles     */
 /**************************/
 :root {
-	--primary: #1c262f;
-	--primary-light: #212d37;
-	--secondary: #0ee951;
-	--tertiary: #00dabf;
-	--gradient: linear-gradient(to right, #0ee951, #00dabf);
+	--primary: rgba(228, 228, 228, 0.794);
+	--primary-light: rgb(255, 254, 254);
+	--secondary: #38b988;
+	--tertiary: #ffbb00;
+	--gradient: linear-gradient(to right, #38b988, #ffbb00);
 }
 
 h1,
@@ -53,8 +53,15 @@ h4 {
 	padding: 0;
 }
 
-a {
-	color: white;
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: black;
 	text-decoration: none;
 }
 
@@ -90,7 +97,10 @@ li {
 }
 
 .bottom {
-  	background-color: black;
+  	background-color: #38b988;
+}
+.container2 {
+	background-color: #ffbb00;
 }
 
 /* Gradient Border And Background On Icons */
@@ -119,7 +129,7 @@ li {
 .footer a:hover,
 .footer .fab:hover {
 	cursor: pointer;
-	background: var(--gradient);
+	background: var(--tertiary);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -187,7 +197,7 @@ li {
 }
 
 .navbar .dropdown-item {
-	color: #eee;
+	color: black;
 	font-weight: 500;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
@@ -197,7 +207,7 @@ li {
 }
 
 .navbar .dropdown-item:hover {
-  	background-color: var(--primary);
+  	background-color: var(--tertiary);
 }
 
 .navbar .dropdown-divider {
@@ -209,7 +219,7 @@ li {
 }
 
 .navbar .nav-item .nav-link {
-	color: #eee;
+	color: black;
 	text-decoration: none;
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
@@ -260,7 +270,7 @@ li {
 /*     Home     */
 /****************/
 .home {
-	background-image: url(../assets/images/home.jpg);
+	background-image: url(../assets/images/home.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -322,15 +332,16 @@ li {
 	padding: 10px 30px;
 	border-image-slice: 1;
 	background-image: none;
-	background: transparent;
+	background-image: var(--gradient);
+	/*background: transparent;*/
 	border-image-source: var(--gradient);
 }
 
-.btn-secondary:hover {
+/*.btn-secondary:hover {
 	color: black;
 	padding: 10px 30px;
 	background-image: var(--gradient);
-}
+}*/
 
 /* Other Pages Button */
 .btn-tertiary {
@@ -718,4 +729,16 @@ li {
 		width: 22px;
 		background-size: 22px 34px;
 	}
+}
+
+
+.item-img {
+	padding-top: 10px;
+	padding-right: 1px;
+	padding-bottom: 10px;
+	padding-left: 1px;
+}
+
+.btn {
+	color:black;
 }

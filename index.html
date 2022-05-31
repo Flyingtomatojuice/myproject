@@ -18,7 +18,7 @@
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Mirko - Broadband Company</title>
+    <title>Visvis Logistics Services</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -27,24 +27,122 @@
     <link href="./css/aos.min.css" rel="stylesheet">
     <link href="./css/swiper.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" href="images/homeee_icon.png">
 
+    <script type="text/javascript"> 
+    function letters(input)
+    {
+    var reg = /[^a-z ]/gi;
+    input.value = input.value.replace(reg,"");
+    }
+    function mail(input)
+    {
+    var reg = /[^a-z0-9@.]/gi;
+    input.value = input.value.replace(reg,"");
+    }
+    </script>
+   
+    <style>
+    .pra {
+        font-size: 11px;
+      }
+    .sub {
+        border:none;
+        background-color: white;
+    }
+    .pras {
+        font-size: 11px;
+    }
+    
+    #services, #about {
+        background-image: url('./assets/images/services-bg.jpg');
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: lighten;
+    }
+    #card-services {
+        background-color: rgb(204, 202, 196, 0.4);
+    }
+
+    /*-----------------------SIR PONIADO EDIT-----------------------*/
+    .active, .nav-link:hover {
+    background-color: #38b988;
+    color: #ffbb00;
+    } /*-----------------------SIR PONIADO EDIT-----------------------*/
+
+    /*-----------------------JO ANN EDIT-----------------------*/
+    select:invalid { /*CONTACT DROPDOWN*/
+        color: rgb(145, 145, 145); 
+    }
+
+   .footer_links:link {
+        color: black;
+    }
+
+    /* visited link */
+    .footer_links:visited {
+        color: purple;
+    }
+
+    /* mouse over link */
+    .footer_links:hover {
+        color: #38b988;
+    }
+
+    /* selected link */
+    .footer_links:active {
+        color: white;
+    }
+    
+    video {
+      width: 100%;
+    }
+    /*-----------------------JO ANN EDIT-----------------------*/
+
+    /*-----------------------MIGUEL EDIT-----------------------*/
+    .card-standard{
+        height: 250px;
+        overflow-y: auto;
+        background-color: rgb(224, 222, 222);
+    }
+    /* width */
+    .card-standard::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    .card-standard::-webkit-scrollbar-track {
+        background: #dfdfdf;
+        border-radius: 20px;
+    }
+
+    /* Handle */
+    .card-standard::-webkit-scrollbar-thumb {
+        background: rgb(184, 184, 184);
+        border-radius: 20px;
+    }
+
+    /* Handle on hover */
+    .card-standard::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    /*-----------------------MIGUEL EDIT-----------------------*/
+    </style>
     <!-- Favicon -->
     <link rel="icon" href="./assets/images/favicon.png">
 </head>
 <body>
     
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation" style="background-color:#D3D3D3;">
         <div class="container">
 
-            <!-- Image Logo -->
-            <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
 
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <a class="navbar-brand logo-text" href="index.html">Mirko</a>
+            <a class="navbar-brand logo-text" href="index.html" style="color:#ffbb00;">VISVIS LOGISTICS</a>
 
             <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" style="background-color:#38b988; border-radius:1vw"></span>
             </button>
 
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" >
@@ -65,11 +163,13 @@
                         <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">Drop</a>
                         
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="article.html">Article Details</a></li>
+                            <li><a class="dropdown-item" href="offers.php">Offers</a></li>
                             <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
+                            <li><a class="dropdown-item" href="announcement.html">Announcements</a></li>
                             <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                            <!-----------------------JO ANN EDIT----------------------->
+                            <li><a class="dropdown-item" href="job.php">Join Our Team</a></li>
+                            <!-----------------------JO ANN EDIT----------------------->
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -78,15 +178,33 @@
                 </ul>
                 <span class="nav-item social-icons">
                     <span class="fa-stack">
-                        <a href="#your-link">
+                        <a href="https://web.facebook.com/visvislogisticservices/?_rdc=1&_rdr" target="_blank">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-facebook-f fa-stack-1x"></i>
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="#your-link">
+                        <a href="https://www.linkedin.com/in/visvis-logistics/" target="_blank">
                             <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-twitter fa-stack-1x"></i>
+                            <i class="fab fa-linkedin fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="https://vt.tiktok.com/ZSe7Fxb2v/" target="_blank">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-tiktok fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="https://www.instagram.com/visvislogistics.ph/" target="_blank">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-instagram fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="https://www.pinterest.ph/visvisl/_saved/" target="_blank">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-pinterest fa-stack-1x"></i>
                         </a>
                     </span>
                 </span>
@@ -95,22 +213,38 @@
     </nav> <!-- end of navbar -->
     <!-- end of navigation -->
 
+    
 
     <!-- Home -->
     <section class="home py-5 d-flex align-items-center" id="header">
         <div class="container text-light py-5"  data-aos="fade-right"> 
-            <h1 class="headline">Best <span class="home_text">Broadband</span><br>Internet Plans For You</h1>
-            <p class="para para-light py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus tempore accusamus quis magnam doloremque itaque ad modi, pariatur iste labore similique officiis impedit aspernatur aperiam facere architecto. Eligendi, repellendus inventore!</p>
-            <div class="d-flex align-items-center">
-                <p class="p-2"><i class="fas fa-laptop-house fa-lg"></i></p>
-                <p>Lorem ipsum dolor sit amet.</p>  
-            </div>
-            <div class="d-flex align-items-center">
-                <p class="p-2"><i class="fas fa-wifi fa-lg"></i></p>
-                <p>Lorem ipsum dolor sit amet.</p>  
-            </div>
+            <h1 class="headline">Best <span class="home_text">Logistics Services</span><br>Got All Your Cargo Needs Covered!</h1>
+            <!-----------------------JO ANN EDIT----------------------->
+            <p class="para para-light py-3" style="color:black;" align="justify">Offers premier cargo delivery services that cater door-to-door delivery to anywhere in the Philippines. They have a selection of fleets/vehicles available for hire, each capable of fitting cargos of various sizes, weights, or volumes at a very affordable price. </p>
+            <!-----------------------JO ANN EDIT----------------------->
+            <div class="row">
+                <div class="col-lg-3 d-flex align-items-center">
+                    <div class="p-2"><i class="far fa-map fa-3x fa-fw"></i></div>
+                    <!-----------------------JO ANN EDIT----------------------->
+                    <div class="ms-2" style="padding-left: 3%;"><br><br>
+                        <h6>ADDRESS</h6>
+                        <!--p class="pra">Tungkong Mangga, San Juan del Monte, Philippines</p-->
+                        <p>Tungkong Mangga, <br> San Jose del Monte, Philippines</p>
+                        <!-----------------------JO ANN EDIT----------------------->
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex align-items-center" >
+                    <div class="p-2"><i class="fas fa-mobile-alt fa-3x fa-fw"></i></div>
+                    <div class="ms-2" style="padding-left: 3%;">
+                        <h6>CALL FOR QUERY</h6>
+                        <!-----------------------JO ANN EDIT----------------------->
+                        <p><a href="tel:+639519295887">(+63) 951 929 5887</a></p>
+                        <!--p>(+63) 951  929 5887</p-->
+                        <!-----------------------JO ANN EDIT----------------------->
+                    </div>
+                </div>
             <div class="my-3">
-                <a class="btn" href="#plans">View Plans</a>
+                <a class="btn" href="https://www.messenger.com/t/103718682253116" target="_blank" style="position:relative; z-index:100">Message Now!</a>
             </div>
         </div> <!-- end of container -->
     </section> <!-- end of home -->
@@ -121,19 +255,23 @@
         <div class="container-fluid">  
             <div class="row text-light">
                 <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
-                    <i class="fas fa-tachometer-alt fa-3x p-2"></i>
-                    <h4 class="py-3">Download 1 GBPS</h4>
-                    <p class="para-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit consequatur doloribus natus in suscipit!</p>
+                    <i class="fas fa-luggage-cart fa-3x p-2"></i>
+                    <h4 class="py-3">Can cater all your transportation needs.</h4>
+                    <p class="para-light">Whether you're moving inventory for your online business or clearing out furniture to move into your new home, Visvis Logistics Services has the right vehicle available just for you!</p>
                 </div>
                 <div class="col-lg-4 text-center p-5"  data-aos="zoom-in">
-                    <i class="fas fa-clock fa-3x p-2"></i>
-                    <h4 class="py-3">99% Internet Uptime</h4>
-                    <p class="para-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit consequatur doloribus natus in suscipit!</p>
+                    <i class="fas fa-shuttle-van fa-3x p-2"></i>
+                    <!-----------------------JO ANN EDIT----------------------->
+                    <h4 class="py-3">All sizes of vehicles</h4>
+                    <p class="para-light">Offers all sizes of transportation vehicles, from small to large, that can handle all your things. All the vehicles are in good condition.</p>
+                    <!-----------------------JO ANN EDIT----------------------->
                 </div>
                 <div class="col-lg-4 text-center p-5 text-dark"  data-aos="zoom-in"> 
                     <i class="fas fa-headset fa-3x p-2"></i>
                     <h4 class="py-3">24/7 Support </h4>
-                    <p class="para-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit consequatur doloribus natus in suscipit!</p>
+                    <!-----------------------JO ANN EDIT----------------------->
+                    <p class="para-light">We offer 24/7 customer support and can engage customers whenever they need.</p>
+                    <!-----------------------JO ANN EDIT----------------------->
                 </div>
             </div>
         </div> <!-- end of container -->
@@ -146,12 +284,14 @@
             <div class="row d-flex align-items-center">
                 <div class="col-lg-7" data-aos="fade-right">
                     <p>ABOUT US</p>
-                    <h1>We are top internet <br> service company</h1>
-                    <p class="py-2 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed accusantium aut dolores inventore architecto modi cupiditate eligendi corporis, illum illo culpa. Reiciendis, molestias. Illum voluptatum quisquam ad veritatis dolorem.</p>
-                    <p class="py-2 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed accusantium aut dolores inventore architecto modi cupiditate eligendi corporis, illum illo culpa. Reiciendis, molestias. Illum voluptatum quisquam ad veritatis dolorem.</p>
+                    <!-----------------------JO ANN EDIT----------------------->
+                    <h1 style="color:black;">We are a top<p style="color:#ffbb00;">LOGISTICS</p><p style="color:#38b988;">SERVICES COMPANY</h1>
+                    <p class="py-2 para-light" align="justify">Visvis Logistics Services also caters to transportation services for people like families who want to attend gatherings in distant places or companies wanting to send their employees to seminars, workshops, or company outings.</p>
+                    <p class="py-2 para-light" align="justify">Visvis Logistics Services offers premier cargo delivery services that cater door-to-door delivery to anywhere in the Philippines. They have a selection of fleets/vehicles available for hire, each capable of fitting cargos of various sizes, weights, or volumes at a very affordable price.</p>
+                    <!-----------------------JO ANN EDIT----------------------->
 
                     <div class="my-3">
-                        <a class="btn" href="#your-link">Learn More</a>
+                        <a class="btn" href="viewmore.html" style="color:black;">View More</a>
                     </div>
                 </div>
                 <div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-down"> 
@@ -167,52 +307,73 @@
         <div class="container text-light">
             <div class="text-center pb-4" >
                 <p>OUR SERVICES</p> 
-                <h2 class="py-2">Explore unlimited possibilities</h2>
-                <p class="para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae asperiores, quia accusantium sunt corporis optio recusandae? Nostrum libero pariatur cumque, ipsa dolores voluptatibus voluptate alias sit fuga. Itaque, ea quo.</p>
+                <!-----------------------JO ANN EDIT----------------------->
+                <h2 class="py-2">Book now at Visvis Logistics Services, we're here to handle it!</h2>
+                <!-----------------------JO ANN EDIT----------------------->
+                <p class="para-light">Visvis Logistics Services also caters to transportation services for people like families who want to attend gatherings in distant places or companies wanting to send their employees to seminars, workshops, or company outings.</p>
             </div>
             <div class="row gy-4 py-2" data-aos="zoom-in">
                 <div class="col-lg-4">
                     <div class="card bg-transparent">
-                        <i class="fas fa-home fa-2x"></i>
-                        <h4 class="py-2">HOME BROADBAND</h4>
-                        <p class="para-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit consequatur doloribus natus in suscipit!</p>
+                        <i class="fas fa-shuttle-van fa-2x"></i>
+                        <!-----------------------JO ANN EDIT----------------------->
+                        <h4 class="py-2">DELIVERY AND PICK-UP</h4>
+                        <p class="para-light" align="justify">We offer a delivery and pick-up service that is suitable for any kind of package, from one point to another.</p>
+                        <a class="nav-link" href="https://www.messenger.com/t/103718682253116" style="color:#ffbb00; font-size: 18px;"><strong>Avail Now</strong></a>
+                        <!-----------------------JO ANN EDIT----------------------->
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card bg-transparent">
-                        <i class="fas fa-wifi fa-2x"></i>
-                        <h4 class="py-2"> HOME WIFI</h4>
-                        <p class="para-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit consequatur doloribus natus in suscipit!</p>
+                        <i class="fas fa-couch fa-2x"></i>
+                        <h4 class="py-2">LIPAT BAHAY/LIPAT GAMIT</h4>
+                        <!-----------------------JO ANN EDIT----------------------->
+                        <p class="para-light" align="justify">We provide a different kind of transportation vehicle that can handle your family's things and furniture in your house.</p>
+                        <a class="nav-link" href="https://www.messenger.com/t/103718682253116" style="color:#ffbb00; font-size: 18px;"><strong>Avail Now</strong></a>
+                        <!-----------------------JO ANN EDIT----------------------->
                     </div>                    
                 </div>
                 <div class="col-lg-4">
                     <div class="card bg-transparent">
-                        <i class="fas fa-phone fa-2x"></i>
-                        <h4 class="py-2">HOME BROADBAND</h4>
-                        <p class="para-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit consequatur doloribus natus in suscipit!</p>
+                        <i class="fas fa-glass-cheers fa-2x"></i>
+                        <h4 class="py-2">FAMILY GATHERING</h4>
+                        <!-----------------------JO ANN EDIT----------------------->
+                        <p class="para-light" align="justify">We can accommodate and bring you to any occasion with your family and drive you in the safest way possible.</p>
+                        <a class="nav-link" href="https://www.messenger.com/t/103718682253116" style="color:#ffbb00; font-size: 18px;"><strong>Avail Now</strong></a>
+                        <!-----------------------JO ANN EDIT----------------------->
                     </div>                    
                 </div>
                 <div class="col-lg-4">
                     <div class="card bg-transparent">
-                        <i class="fas fa-mobile fa-2x"></i>
-                        <h4 class="py-2">MOBILE CONNECTION</h4>
-                        <p class="para-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit consequatur doloribus natus in suscipit!</p>
+                        <i class="fas fa-utensils fa-2x"></i>
+                        <h4 class="py-2">CATERING SERVICES</h4>
+                        <!-----------------------JO ANN EDIT----------------------->
+                        <p class="para-light" align="justify">We offer transportation for any kind of catering service, carrying a variety of catering packages ranging from small to large.</p>
+                        <a class="nav-link" href="https://www.messenger.com/t/103718682253116" style="color:#ffbb00; font-size: 18px;"><strong>Avail Now</strong></a>
+                        <!-----------------------JO ANN EDIT----------------------->
                     </div>                    
                 </div>
                 <div class="col-lg-4">
                     <div class="card bg-transparent">
-                        <i class="fas fa-home fa-2x"></i>
-                        <h4 class="py-2">SECURITY</h4>
-                        <p class="para-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit consequatur doloribus natus in suscipit!</p>
+                        <i class="fas fa-business-time fa-2x"></i>
+                        <h4 class="py-2">COMPANY TOURS</h4>
+                        <p class="para-light" align="justify">We can accommodate and drive your company to your chosen tour destination and handle all your equipment with care.</p><br>
+                        <!-----------------------JO ANN EDIT----------------------->
+                        <a class="nav-link" href="https://www.messenger.com/t/103718682253116" style="color:#ffbb00; font-size: 18px;"><strong>Avail Now</strong></a>
+                        <!-----------------------JO ANN EDIT----------------------->
                     </div>                    
                 </div>
                 <div class="col-lg-4">
                     <div class="card bg-transparent">
-                        <i class="fas fa-tv fa-2x"></i>
-                        <h4 class="py-2">TV SETUP BOX</h4>
-                        <p class="para-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit consequatur doloribus natus in suscipit!</p>
+                        <i class="fas fa-people-carry fa-2x"></i>
+                        <h4 class="py-2">TEAM BUILDING</h4>
+                        <!-----------------------JO ANN EDIT----------------------->
+                        <p class="para-light" align="justify">We offer transportation for your team building, accommodating a group of individuals and driving them to their venue.</p><br>
+                        <a class="nav-link" href="https://www.messenger.com/t/103718682253116" style="color:#ffbb00; font-size: 18px;"><strong>Avail Now</strong></a>
+                        <!-----------------------JO ANN EDIT----------------------->
                     </div>                    
                 </div>
+                
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </section> <!-- end of services -->
@@ -224,30 +385,30 @@
             <div class="text-center pb-4">
                 <p>OUR PLANS</p>
                 <h2 class="py-2">Explore unlimited possibilities</h2>
-                <p class="para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae asperiores, quia accusantium sunt corporis optio recusandae? Nostrum libero pariatur cumque, ipsa dolores voluptatibus voluptate alias sit fuga. Itaque, ea quo.</p>
+                <p class="para-light">We are available every Monday to Friday to communicate all your needs! Dont'cha worry, mga ka-visvis!</p>
             </div>
             <div class="row gy-4" data-aos="zoom-in">
                 <div class="col-lg-4">
                     <div class="card bg-transparent px-4">
-                        <h4 class="py-2">BASIC BUNDLE</h4>
-                        <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h4 class="py-2">PACKAGE 1</h4>
+                        <p class="py-3" align="justify">Offers premier cargo delivery services that cater to Door to Door delivery to any point in the Philippines.</p>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Details will be input here.</p>
                         </div>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Details will be input here.</p>
                         </div>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Details will be input here.</p>
                         </div>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Details will be input here.</p>
                         </div>
-                        <h4 class="py-3">$24/Month</h4>
+                        <h4 class="py-3">₱ 500/Month</h4>
                         <div class="my-3">
                             <a class="btn" href="#your-link" >View Plans</a>
                         </div>
@@ -256,25 +417,25 @@
 
                 <div class="col-lg-4">
                     <div class="card bg-transparent px-4">
-                        <h4 class="py-2">BUSINESS BUNDLE</h4>
-                        <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h4 class="py-2">PACKAGE 2</h4>
+                        <p class="py-3" align="justify">Offers premier cargo delivery services that cater to Door to Door delivery to any point in the Philippines.</p>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Details will be input here.</p>
                         </div>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Details will be input here.</p>
                         </div>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Details will be input here.</p>
                         </div>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Details will be input here.</p>
                         </div>
-                        <h4 class="py-3">$99/Month</h4>
+                        <h4 class="py-3">₱ 1000/Month</h4>
                         <div class="my-3">
                             <a class="btn" href="#your-link" >View Plans</a>
                         </div>
@@ -283,25 +444,25 @@
 
                 <div class="col-lg-4">
                     <div class="card bg-transparent px-4" >
-                        <h4 class="py-2">PREMIUM BUNDLE</h4>
-                        <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h4 class="py-2">PACKAGE 3</h4>
+                        <p class="py-3" align="justify">Offers premier cargo delivery services that cater to Door to Door delivery to any point in the Philippines.</p>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Details will be input here.</p>
                         </div>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Details will be input here.</p>
                         </div>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Details will be input here.</p>
                         </div>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Details will be input here.</p>
                         </div>
-                        <h4 class="py-3">$199/Month</h4>
+                        <h4 class="py-3">₱ 1500/Month</h4>
                         <div class="my-3">
                             <a class="btn" href="#your-link" >View Plans</a>                    
                         </div>
@@ -317,35 +478,41 @@
         <div class="container-fluid text-light">
             <div class="row">
                 <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right">
-                    <img class="img-fluid" src="./assets/images/work.jpg" alt="work">        
+                    <video width="620" height="490" controls>
+                        <source src="./assets/images/work.mp4" type="video/mp4">
+                      </video>        
                 </div>
                 <div class="col-lg-5 d-flex align-items-center px-4 py-3" data-aos="">
                     <div class="row">
                         <div class="text-center text-lg-start py-4 pt-lg-0">
-                            <p>OUR WORK</p>
-                            <h2 class="py-2">Explore unlimited possibilities</h2>
-                            <p class="para-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos dicta mollitia totam explicabo obcaecati quia laudantium repudiandae.</p>
+                            <p>OUR COMMUNITY</p>
+                            <h2 class="py-2">Explore Our Growing Family</h2>
+                            <!-----------------------JO ANN EDIT----------------------->
+                            <p class="para-light">Visvis Logistics Services was registered on December 18, 2020, with BN Number 2357677. Its current status is DTI-Registered.</p>
+                            <!-----------------------JO ANN EDIT----------------------->
                         </div>
                         <div class="container" data-aos="fade-up">
                             <div class="row g-5">
                                 <div class="col-6 text-start" >
-                                    <i class="fas fa-briefcase fa-2x text-start"></i>
-                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1258" data-purecounter-duration="3">1</h2>
-                                    <p>PROJECTS COMPLETED</p>
+                                    <i class="fas fa-thumbs-up fa-2x text-start"></i>
+                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="2260" data-purecounter-duration="2">1</h2>
+                                    <p>TOTAL FACEBOOK LIKES</p>
                                 </div>
                                 <div class="col-6" >
-                                    <i class="fas fa-award fa-2x"></i>
-                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="3">1</h2>
-                                    <p>AWARDS</p>
+                                    <i class="fas fa-users fa-2x"></i>
+                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="2408" data-purecounter-duration="2">1</h2>
+                                    <p>TOTAL FACEBOOK FOLLOWERS</p>
                                 </div>
                                 <div class="col-6">
-                                    <i class="fas fa-users fa-2x"></i>
-                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1255" data-purecounter-duration="3">1</h2>
-                                    <p>CUSTOMER ACTIVE</p>
+                                    <i class="fas fa-briefcase fa-2x"></i>
+                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1255" data-purecounter-duration="2">1</h2>
+                                    <!-----------------------JO ANN EDIT----------------------->
+                                    <p>ACTIVE CUSTOMERS</p>
+                                    <!-----------------------JO ANN EDIT----------------------->
                                 </div>
                                 <div class="col-6">
                                     <i class="fas fa-clock fa-2x"></i>
-                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1157" data-purecounter-duration="3">1</h2>
+                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="2157" data-purecounter-duration="2">1</h2>
                                     <p>GOOD REVIEWS</p>
                                 </div>
                             </div>
@@ -363,8 +530,10 @@
             <div class="row">
                 <div class="text-center w-lg-75 m-auto pb-4">
                     <p>TESTIMONIALS</p>
-                    <h2 class="py-2">What Our Clients Says</h2>
-                    <p class="para-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci esse facilis vel, neque ipsa mollitia impedit, commodi ab illo dignissimos, voluptatum quae amet sed tenetur dolores reprehenderit laudantium quo sint.</p>
+                    <!-----------------------JO ANN EDIT----------------------->
+                    <h2 class="py-2">What Do Our Clients Say?</h2>
+                    <!-----------------------JO ANN EDIT----------------------->
+                    <p class="para-light">Customers who have availed of their services were all left satisfied by how responsive and accommodating Visvis is. No matter the need of the customer, Visvis Logistics Services got there and got the job done.</p>
                 </div>
             </div> <!-- end of row -->
             <div class="row p-2" data-aos="zoom-in">
@@ -377,16 +546,16 @@
                                 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <div class="testimonial-card p-4">
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam commodi officia laborum qui iste quidem!</p>
+                                    <div class="testimonial-card p-4 card-standard" style="width:100%; max-height: 60vh; min-height: 45vh">
+                                        <p>Super legit po ng kanilang services ! Lalo kapag maglilipat ka ng gamit from one place to another. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dignissimos itaque hic repudiandae voluptates cum modi suscipit iure tenetur consectetur vitae accusantium saepe sequi minima, debitis excepturi fugit, ab non porro laudantium. Sint quia, cum rem, possimus repudiandae dolore, accusantium omnis earum quidem doloremque fuga. Quae deleniti aliquam, sint nostrum eum neque. Deleniti nam molestiae, debitis dolorem blanditiis cum alias possimus ducimus ad exercitationem ex similique pariatur ullam ab a quod iusto ratione, nihil magnam dolorum quos hic perferendis! Sint consectetur, eum incidunt necessitatibus voluptas nobis quidem accusantium non quam. Explicabo delectus voluptates magnam fugiat neque ducimus quae, inventore asperiores odit tempore maiores ad alias atque soluta magni officiis. Officia excepturi nisi odit consectetur, alias autem magnam aliquid amet porro necessitatibus quisquam at ipsa ut veniam exercitationem quidem repellat explicabo aspernatur. Delectus pariatur ipsum cum. Iure inventore esse distinctio eligendi, velit deleniti ratione asperiores aliquam dolor quaerat vitae ipsa incidunt molestias doloribus vero a autem ab, molestiae ad? Ipsam voluptate architecto saepe vitae? Incidunt magni minus eveniet sed voluptate, dignissimos laudantium optio vero qui cum, placeat hic accusamus vel ab velit cupiditate adipisci modi ipsam! Repellendus maxime ratione iusto necessitatibus nesciunt ipsum. Placeat quis vero tempora iusto accusamus error soluta aliquid, facere repudiandae quas mollitia. Voluptatem, maxime. Reprehenderit nihil impedit veritatis obcaecati inventore ducimus eveniet, atque ab possimus tenetur, harum maxime error? Error, praesentium vel. Vel voluptas architecto voluptatibus voluptate aut ut corporis accusamus odio. In deleniti, dolores amet quis culpa, at molestias laudantium animi veritatis quasi provident dolore nostrum! Vitae architecto, laborum obcaecati qui dignissimos ex ipsam id iure tenetur eum repellendus nihil perspiciatis harum nemo distinctio et? Quaerat, in libero eaque sed voluptates recusandae expedita laborum blanditiis delectus rerum provident corrupti veritatis, ea rem laudantium est perferendis consequuntur? Doloremque debitis ea illo earum. Consequatur sint enim accusantium corrupti?</p>
                                     
                                         <div class="d-flex pt-4">
                                             <div>
                                                 <img class="avatar" src="./assets/images/testimonial-1.jpg" alt="testimonial">
                                             </div>
                                             <div class="ms-3 pt-2">
-                                                <h6>Marlene Visconte</h6>
-                                                <p>General Manager - Scouter</p>
+                                                <h6>Mery Rose Isla</h6>
+                                                <p>Poblacion, Mabini, Batangas</p>
                                             </div>
                                         </div>
                                     </div>
@@ -395,15 +564,15 @@
         
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <div class="testimonial-card p-4">
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam commodi officia laborum qui iste quidem!</p>
+                                    <div class="testimonial-card p-4 card-standard" style="width:100%; max-height: 60vh; min-height: 45vh">
+                                        <p>Very helpful ! Thank you sa good service nyo po Visvis company. Napaka sulit ng binayad ko !</p>
                                         <div class="d-flex pt-4">
                                             <div>
                                                 <img class="avatar" src="./assets/images/testimonial-2.jpg" alt="testimonial">
                                             </div>
                                             <div class="ms-3 pt-2">
-                                                <h6>John Spiker</h6>
-                                                <p>Team Leader - Vanquish</p>
+                                                <h6>John Reniel Agena</h6>
+                                                <p>Colvo, Mabini, Batangas</p>
                                             </div>
                                         </div>
                                     </div>
@@ -412,15 +581,17 @@
         
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <div class="testimonial-card p-4">
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam commodi officia laborum qui iste quidem!</p>
+                                    <div class="testimonial-card p-4 card-standard" style="width:100%; max-height: 60vh; min-height: 45vh">
+                                        <!-----------------------JO ANN EDIT----------------------->
+                                        <p>Highly recommended services ! Best logistics I ever availed, no more hassle and very convenient.</p>
+                                        <!-----------------------JO ANN EDIT----------------------->
                                         <div class="d-flex pt-4">
                                             <div>
                                                 <img class="avatar" src="./assets/images/testimonial-3.jpg" alt="testimonial">
                                             </div>
                                             <div class="ms-3 pt-2">
-                                                <h6>Stella Virtuoso</h6>
-                                                <p>Design Chief - Upscale</p>
+                                                <h6>Celinaire Mendoza</h6>
+                                                <p>Anilao, Mabini, Batangas</p>
                                             </div>
                                         </div>
                                     </div>      
@@ -429,15 +600,15 @@
         
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <div class="testimonial-card p-4">
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam commodi officia laborum qui iste quidem!</p>
+                                    <div class="testimonial-card p-4 card-standard" style="width:100%; max-height: 60vh; min-height: 45vh">
+                                        <p>Ang ganda ng business ba ito. Di ka mag dadalawang isip na mag avail at mag request. Great job Visvis!</p>
                                         <div class="d-flex pt-4">
                                             <div>
                                                 <img class="avatar" src="./assets/images/testimonial-4.jpg" alt="testimonial">
                                             </div>
                                             <div class="ms-3 pt-2">
-                                                <p>Mike tim</p>
-                                                <p>Investor - TechGroww</p>
+                                                <h6>Margie Abante</h6>
+                                                <p>Talahib, Tingloy, Batangas</p>
                                             </div>
                                         </div>
                                     </div>
@@ -461,152 +632,166 @@
     </div> <!-- end of testimonials -->
 
 
-    <!-- Newsletter -->
+    <!-- Email Subscription -->
     <section class="newsletter text-light py-5">
         <div class="container">
             <div class="row" >
                 <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right">
-                    <h4 class="py-1">Subscribe to our Newsletter</h4>
-                    <p class="para-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor deleniti nobis amet accusamus debitis facilis quibusdam officia laborum nesciunt. Nihil.</p>
+                    <form class="box" action="insert2.php" method="post">
+                    <h4 class="py-1">Want to be notified of our new updates?</h4>
+                    <p class="para-light">Do you want to be reminded of our services? Send us your email and be reminded of everything new.</p>
                 </div>
                 <div class="col-lg-6 d-flex align-items-center" data-aos="fade-down">
-                    <div class="input-group my-3">
-                        <input type="text" class="form-control p-2" placeholder="Enter your email address" aria-label="Recipient's email">
-                        <button class="btn-secondary text-light" type="button">Subscribe</button>
+                    <div class="input-group my-3 testimonial-card" style="border-spacing: 0px;">
+                        <input type="text" name="email" class="form-control p-2" placeholder="Enter your email address" aria-label="Recipient's email">
+                        <button onclick="myFunction()" class="btn-secondary text-light" type="submit">Subscribe</button>
                     </div>
+                </form>
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </section> <!-- end of newsletter -->
+    </section> <!-- end of email subs -->
 
 
     <!-- Contact -->
-    <section class="contact d-flex align-items-center py-5" id="contact">
+    <section class="contact d-flex align-items-center py-5" id="contact" action="insert.php" method="post">
         <div class="container-fluid text-light">
             <div class="row">
-                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center px-lg-5" data-aos="fade-right">
+                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center px-lg-5" data-aos="fade-right" action="insert.php" method="post">
                     <div style="width:90%">
-                        <div class="text-center text-lg-start py-4 pt-lg-0">
+                        <div class="text-center text-lg-start py-4 pt-lg-0" action="insert.php" method="post">
+                            <form class="box" action="insert.php" method="post">
                             <p>CONTACT</p>
-                            <h2 class="py-2">Send your query</h2>
-                            <p class="para-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos dicta mollitia totam explicabo obcaecati quia laudantium repudiandae.</p>
+                            <!-----------------------JO ANN EDIT----------------------->
+                            <p class="para-light" align="justify">Visvis Logistics Services is a premier cargo delivery services that cater door-to-door delivery to anywhere in the Philippines. Send us a message now!</p>
+                            <!-----------------------JO ANN EDIT----------------------->
                         </div>
                         <div>
+                            
                             <div class="row" >
+                                
                                 <div class="col-lg-6">
                                     <div class="form-group py-2">
-                                        <input type="text" class="form-control form-control-input" id="exampleFormControlInput1" placeholder="Enter name">
+                                        <!-----------------------JO ANN EDIT----------------------->
+                                        <input type="text" name="username" onkeyup="letters(this)" placeholder="Full Name" style="width:100%;">
+                                      
                                     </div>                                
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group py-2">
-                                        <input type="email" class="form-control form-control-input" id="exampleFormControlInput2" placeholder="Enter phone number">
+                                        <select name="options" required style="width: 100%; padding: 1%;">
+                                            <option value="" disabled selected hidden>I want to send a/an...</option>                                            
+                                            <option value="Inquiry">Inquiry</option>
+                                            <option value="Greetings">Greetings</option>
+                                            <option value="Requirements">Requirements</option>
+                                        </select>
+                                        
+                                    </div>                                
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group py-2">
+                                        
+                                         <input type="tel" pattern="^(09)\d{9}$" name="number" style="width:100%;" id="mobile" placeholder="Number Ex. 09123456789" onKeyPress="if(this.value.length==11) return false;" required/>
                                     </div>                                 
                                 </div>
                             </div>
-                            <div class="form-group py-1">
-                                <input type="email" class="form-control form-control-input" id="exampleFormControlInput3" placeholder="Enter email">
-                            </div>  
+                            <div class="row">
+                            <div class="col-lg-6">
                             <div class="form-group py-2">
-                                <textarea class="form-control form-control-input" id="exampleFormControlTextarea1" rows="6" placeholder="Message"></textarea>
+                                <input type="email" pattern='/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/' name="email" onkeyup="mail(this)" placeholder="Email" style="width:100%;">
+                            </div> </div></div>
+                                        <!-----------------------JO ANN EDIT----------------------->
+                            <div class="form-group py-2">
+                                <textarea class="form-control form-control-input" input type="text" name="message" id="exampleFormControlTextarea1" rows="6" placeholder="Message"></textarea>
                             </div>                            
                         </div>
                         <div class="my-3">
-                            <a class="btn form-control-submit-button" href="#your-link">Submit</a>
+                            <!-----------------------JO ANN EDIT----------------------->
+                            <input onclick="myFunction()" type="submit" value="Submit" style="background: black; color: white; font-size: 18px;">
+                            <!-----------------------JO ANN EDIT----------------------->
                         </div>
+                    </form>
                     </div> <!-- end of div -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6 d-flex align-items-center" data-aos="fade-down">
-                    <img class="img-fluid d-none d-lg-block" src="./assets/images/contact.jpg" alt="contact">        
+                    <img class="img-fluid d-none d-lg-block" src="./assets/images/contact1.jpg">        
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </section> <!-- end of contact -->
-
-
+    
     <!-- Location -->
     <section class="location text-light py-5">
         <div class="container" data-aos="zoom-in">
             <div class="row">
                 <div class="col-lg-3 d-flex align-items-center">
-                    <div class="p-2"><i class="far fa-map fa-3x"></i></div>
-                    <div class="ms-2">
+                    <div class="p-2"><i class="far fa-map fa-3x fa-fw"></i></div>
+                    <!-----------------------JO ANN EDIT----------------------->
+                    <div class="ms-2"><br><br>
                         <h6>ADDRESS</h6>
-                        <p>Teuku Umar ST. 1919</p>
+                        <p >Tungkong Mangga, <br>San Jose del Monte, Philippines</p>
+                    <!-----------------------JO ANN EDIT----------------------->
                     </div>
                 </div>
                 <div class="col-lg-3 d-flex align-items-center" >
-                    <div class="p-2"><i class="fas fa-mobile-alt fa-3x"></i></div>
+                    <div class="p-2"><i class="fas fa-mobile-alt fa-3x fa-fw"></i></div>
                     <div class="ms-2">
                         <h6>CALL FOR QUERY</h6>
-                        <p>(800) 265  216 2020</p>
+                        <!-----------------------JO ANN EDIT----------------------->
+                        <p><a href="tel:+639519295887">(+63) 951 929 5887</a></p>
+                        <!--p>(+63) 951  929 5887</p-->
+                        <!-----------------------JO ANN EDIT----------------------->
                     </div>
                 </div>
                 <div class="col-lg-3 d-flex align-items-center" >
-                    <div class="p-2"><i class="far fa-envelope fa-3x"></i></div>
+                    <div class="p-2"><i class="far fa-envelope fa-3x fa-fw"></i></div>
                     <div class="ms-2">
-                        <h6>SEND US MESSAGE</h6>
-                        <p>infodemofile@example.com</p>
+                        <!-----------------------JO ANN EDIT----------------------->
+                        <h6>SEND US A MESSAGE</h6>
+                        <a href = "mailto: visvislogistics@gmail.com"><u>visvislogistics@gmail.com</u></a>
+                        <!--p><u>visvislogistics@gmail.com</u></p-->
+                        <!-----------------------JO ANN EDIT----------------------->
                     </div>
                 </div>
                 <div class="col-lg-3 d-flex align-items-center" >
-                    <div class="p-2"><i class="far fa-clock fa-3x"></i></div>
+                    <div class="p-2"><i class="far fa-clock fa-3x fa-fw"></i></div>
                     <div class="ms-2">
                         <h6>OPENING HOURS</h6>
-                        <p>09:00 AM - 18:00 PM</p>
+                        <p>08:00 AM - 11:00 PM</p>
                     </div>
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </section> <!-- end of location -->
 
-
     <!-- Footer -->
-    <section class="footer text-light">
-        <div class="container">
-            <div class="row" data-aos="fade-right">
-                <div class="col-lg-3 py-4 py-md-5">
-                    <div class="d-flex align-items-center">
-                        <h4 class="">Mirko</h4>
-                    </div>
-                    <p class="py-3 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi repudiandae explicabo esse maxime, impedit rem voluptatibus amet error quas.</p>
-                    <div class="d-flex">
-                        <div class="me-3">
-                            <a href="#your-link">
-                                <i class="fab fa-facebook-f fa-2x py-2"></i>
-                            </a>
-                        </div>
-                        <div class="me-3">
-                            <a href="#your-link">
-                                <i class="fab fa-twitter fa-2x py-2"></i>
-                            </a>
-                        </div>
-                        <div class="me-3">
-                            <a href="#your-link">
-                                <i class="fab fa-instagram fa-2x py-2"></i>
-                            </a>
-                        </div>
-                    </div>
+    <!-----------------------JO ANN EDIT----------------------->
+    <section>
+    <!--section class="footer text-light" JO ANN MADE THIS INTO A COMMENT--> <!--footer text-light - nagiging yellow on hover-->
+        <div class="container2"> <!--YELLOW CONTAINER-->
+            <div class="row" data-aos="fade-right" style="margin:2%">
+                <div class="col-lg-2 py-4 py-md-5">
+                    
                 </div> <!-- end of col -->
 
                 <div class="col-lg-3 py-4 py-md-5">
                     <div>
                         <h4 class="py-2">Quick Links</h4>
-                        <div class="d-flex align-items-center py-2">
-                            <i class="fas fa-caret-right"></i>
-                            <a href="#about"><p class="ms-3">About</p></a>
+                        <div class="d-flex align-items-center py-2"> <!--d-flex- no new line after arrow-->
+                            <i class="fas fa-caret-right"></i> <!--ARROW-->
+                            <p><a href="#about" target="_blank" class="footer_links"><p class="ms-3">About</p></a></p>
                         </div>
                         <div class="d-flex align-items-center py-2">
                             <i class="fas fa-caret-right"></i>
-                            <a href="#"><p class="ms-3">Services</p></a>
+                            <p><a href="#services" target="_blank" class="footer_links"><p class="ms-3">Services</p></a></p>
                         </div>
                         <div class="d-flex align-items-center py-2">
                             <i class="fas fa-caret-right"></i>
-                            <a href="#"><p class="ms-3">Plans</p></a>
+                            <p><a href="#plans" target="_blank" class="footer_links"><p class="ms-3">Plans</p></a></p>
                         </div>
                         <div class="d-flex align-items-center py-2">
                             <i class="fas fa-caret-right"></i>
-                            <a href="#"><p class="ms-3">Contact</p></a>
+                            <p><a href="#contact" target="_blank" class="footer_links"><p class="ms-3">Contact</p></a></p>
                         </div>
                     </div>
                 </div> <!-- end of col -->
@@ -616,53 +801,51 @@
                         <h4 class="py-2">Useful Links</h4>
                         <div class="d-flex align-items-center py-2">
                             <i class="fas fa-caret-right"></i>
-                            <a href="privacy.html"><p class="ms-3">Privacy</p></a>
+                            <p><a href="offers.php" target="_blank" class="footer_links"><p class="ms-3">Offers</p></a></p>
                             
                         </div>
                         <div class="d-flex align-items-center py-2">
                             <i class="fas fa-caret-right"></i>
-                            <a href="terms.html"><p class="ms-3">Terms</p></a>
+                            <p><a href="announcement.html" target="_blank" class="footer_links"><p class="ms-3">Announcements</p></a></p>
                         </div>
                         <div class="d-flex align-items-center py-2">
                             <i class="fas fa-caret-right"></i>
-                            <a href="#your-link"><p class="ms-3">Disclaimer</p></a>
-                        </div>
-                        <div class="d-flex align-items-center py-2">
-                            <i class="fas fa-caret-right"></i>
-                            <a href="#your-link"><p class="ms-3">FAQ</p></a>
+                            <p><a href="job.php" target="_blank" class="footer_links"><p class="ms-3">Join Our Team</p></a></p>
+                            <!-----------------------JO ANN EDIT----------------------->
                         </div>
                     </div>
                 </div> <!-- end of col -->
 
                 <div class="col-lg-3 py-4 py-md-5">
                     <div class="d-flex align-items-center">
-                        <h4>Newsletter</h4>
+                        <h4>Quick Message</h4>
                     </div>
-                    <p class="py-3 para-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, ab.</p>
+                    <!-----------------------JO ANN EDIT----------------------->
+                    <p class="py-3 para-light">Send Us a Message Now!</p>
+                    <!-----------------------JO ANN EDIT----------------------->
+            
                     <div class="d-flex align-items-center">
+                        <form class="box" action="insert3.php" method="post">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control p-2" placeholder="Enter Email" aria-label="Recipient's email">
-                            <button class="btn-secondary text-light"><i class="fas fa-envelope fa-lg"></i></button>       
+                            <textarea input type="text" name="message" class="form-control form-control-input p-2" id="exampleFormControlTextarea1" placeholder="Quick Message"></textarea>
+                            <input onclick="myFunction()" class="sub" type="submit" value="Submit">      
                         </div>
+                        </form>
                     </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </section> <!-- end of footer -->
-
-
+   
     <!-- Bottom -->
     <div class="bottom py-2 text-light" >
         <div class="container d-flex justify-content-between">
             <div>
-                <p>Copyright © Your name</p><br>
-                <p>Distributed by: <a href="https://themewagon.com/">Themewagon</a></p>
+                <p>Copyright © Melham Construction Corporation</p><br>
+                <p>Created by: <a href="https://drive.google.com/drive/folders/1Np_Mxz8hegTz_AOb6vI_Qo0R6e6Te1UP?usp=sharing">MCC-Project-IT-7</a></p>
             </div>
             <div>
-                <i class="fab fa-cc-visa fa-lg p-1"></i>
-                <i class="fab fa-cc-mastercard fa-lg p-1"></i>
-                <i class="fab fa-cc-paypal fa-lg p-1"></i>
-                <i class="fab fa-cc-amazon-pay fa-lg p-1"></i>
+
             </div>
         </div> <!-- end of container -->
     </div> <!-- end of bottom -->
@@ -681,5 +864,24 @@
     <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
     <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
     <script src="./js/script.js"></script>  <!-- Custom scripts -->
+    <script>
+        function myFunction() {
+          confirm("Submit Your Message?");
+        }
+
+        /*-----------------------SIR PONIADO EDIT-----------------------*/
+    
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("navbar");
+        var btns = header.getElementsByClassName("nav-link");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+        /*-----------------------SIR PONIADO EDIT-----------------------*/
+    </script>
 </body>
 </html>
